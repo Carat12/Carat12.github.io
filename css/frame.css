@@ -90,6 +90,7 @@ h4{
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 3%;
+    z-index: 1;
 }
 #card_pro2 {
     top: 100%;
@@ -119,7 +120,7 @@ h4{
 }
 .con_pro{
     height: inherit;
-    padding: 5% 10% 0% 12%;
+    padding: 6% 10% 0% 12%;
 }
 .project_image{
     height: auto;
@@ -132,13 +133,32 @@ h4{
     color: rgb(136,23,152);
     font-size: 2.5vw;
 }
-.text,.check_text{  /*Self Description*/
+.title_pro{  /*Project Name*/
+    margin-bottom: 10%;
+    margin-top: 5%;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    color: rgb(136,23,152);
+    font-size: 2.0vw;
+    float: left;
+}
+.text,.text_pro,.check_text{  /*Self Description*/
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1.3vw;
     line-height: 157%;
 }
-.check_text{
+.text_check{
     font-size: 1vw;
+}
+.text_pro{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.1vw;
+    line-height: 153%;
+}
+.text_hint{
+    font-family: Georgia, serif;
+    font-style: italic;
+    font-size: 1.0vw;
+    margin-top: 4%;
 }
 a{
     color: plum;
@@ -222,9 +242,6 @@ address{
 }
 #legend_text2,#legend_text3,#legend_text4{
     background-color: inherit;
-}
-#title4{
-    font-size: 110%;
 }
 .slider{
     -webkit-appearance: none;  /* Override default CSS styles */
