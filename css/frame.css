@@ -3,9 +3,6 @@ html,body{
     width: 100%;
     margin: 0;
 }
-/*body{
-    
-}*/
 .menu{
     width: 5%;
     height: 100%;
@@ -36,19 +33,18 @@ html,body{
 #menu_img_map,#menu_img_contact{
     height: 2.4vw;/*45%;*/
 }
-.content,.con_background,.con_background_white{
-    width: 95%;
-    height: 82vw;/*150%;*/
-    margin: 0px;
+.content,.con_background{
+    width: 100%;
+    height: 130%;/*150%;*/
+    z-index: -1;
     float: left;
 }
-.con_background,.con_background_white, #con_wel{
+.con_background,.con_background_white, #con_wel,.con_card{
     position: absolute;
 }
 .con_background{
-    width: 100%;
     background-image: url("../image/back.png");
-    background-size: 100% 1030px;
+    background-size: 100%;
     filter: brightness(0.7);
 }
 #content_contact,#con_background_contact{
@@ -56,13 +52,13 @@ html,body{
 }
 .con_background_white{
     width: 100%;
-    top: 82vw;/*150%;*/
+    top: 230%;
     background-color: rgb(245, 245, 245);
-    height: 62vw;/*128%;*/
+    height: 100%;
     z-index: -50;
 }
 #con_background3{
-    top: 162vw;/*320%;*/
+    top: 230%;/*320%;*/
 }
 #con_wel{
     width: 95%;
@@ -73,9 +69,9 @@ html,body{
 .wel{
     color: white;
 	font-family: "Arial";
-    font-size: 8vw;/*128px;/*625%;  /*100px;*/
-    font-weight: bold;
-    margin: 0px;
+    font-size: 5.8vw;/*128px;/*625%;  /*100px;*/
+    font-weight: normal;
+    margin: 2%;
 }
 h4{
     color: white;
@@ -84,71 +80,28 @@ h4{
     font-weight: normal;
     margin: 1%;  /*12px;*/
 }
-.con_card{   
-    position: absolute; 
+.con_card{
     background-color: white;
     left: 15%;
-    top: 31vw;/*%;*/
+    margin-top: 34%;
     width: 75%;
-    height: 56vw;/*100%;*/
+    height: 73%;
     box-shadow: grey 0px 10px 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 3%;
 }
-#card_int1{
-    height: 60vw;/*116%;*/
-    font-size: 1.6vw;/*125%;*/
+#card_pro2 {
+    top: 100%;
 }
-#card_int2{
-    top:100vw;/*200%;*/
-    height: 70vw;/*140%;*/
-    font-size: 1.5vw;/*115%;*/
+#card_pro3 {
+    top: 200%;
 }
-#card_int3{
-    top:180vw;/*363%;*/
-    height: 51vw;/*100%;*/
-    font-size: 1.5vw;/*115%;*/
-}
-#card_por1{
-    height: 55vw;/*105%;*/
-    font-size: 1.6vw;/*125%;*/
-}
-#card_por2{
-    top: 98vw;/*187%;*/
-    height: 50.7vw;/*103%;*/
-    font-size: 1.6vw;/*125%;*/
-}
+
 #card_contact{
 	height:50vw;
 }
-#con_img_per{
-    width: 23vw;/*30%;/*300px;*/
-    height: 22vw;/*44%; /*300px;*/
-    float: left;
-    padding-top: 8%;
-    padding-left: 11%;
-}
-.con_img_poster{
-    width: 21%;
-    height: 35%;
-    float: left;
-    padding-top: 2%;
-    padding-left: 12%;
-}
-.con_img_album{
-    width: 13vw;/*20%;*/
-    height: 13vw;/*21%;*/
-    float: left;
-    position: absolute;
-    padding-top: 5%;
-    padding-left: 16%;
-}
-.con_img_audio{
-    width: 17vw;/*25%;*/
-    height: 17vw;/*26%;*/
-    float: left;
-    position: absolute;
-    padding-top: 2%;
-    padding-left: 13%;
-}
+
 #con_img_address{
     float: right;
     width: 27vw;/*35%;*/
@@ -160,57 +113,44 @@ h4{
     width: 10vw;/*14%;*/
     margin-left: 12%;
 }
-.con_per1{    
-    width: 50%;
-    height: 50%;
-    padding-left: 48%;
-    padding-top: 8%;
-    font-size: 180%;/*25px;*/
+.con_per{
+    height: inherit;
+    padding: 8% 8% 3% 12%;
 }
-.con_per2{
-    width: 80%;
-    padding-left: 10%;
-    padding-right: 10%;
-    padding-top: 0px;
-    font-size: 155%;/*25px;*/
-    line-height: 260%;/*150%;*/
+.con_pro{
+    height: inherit;
+    padding: 5% 10% 0% 12%;
 }
-.con_int1{
-    padding-left: 40%;
-    padding-top: 5%;
+.project_image{
+    height: auto;
+    width: 100%;
+    margin-top: 5%;
 }
-.con_int2{
-    padding-left: 48%;
-    padding-top: 5%;
+.title{  /*About me*/
+    margin-bottom: 13%;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    color: rgb(136,23,152);
+    font-size: 2.5vw;
 }
-#title1{
-    margin: 4% 0% 12% 0%;
+.text,.check_text{  /*Self Description*/
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.3vw;
+    line-height: 157%;
 }
-.title2{
-    padding-left: 39%;
-    padding-top: 1%;
-    font-size: 2.2vw;/*140%;*/
-}
-#title2_travel{
-    padding-left: 35%;
-}
-#title3{
-    padding-left: 13%;
-    padding-top: 8%;
-    font-size: 3vw;/*210%;*/
+.check_text{
+    font-size: 1vw;
 }
 a{
     color: plum;
     background-color: transparent;
     text-decoration: underline;
 }
-#video_des{
-    margin: 5% 0% 0% 10%;
+.mylink{
+    float: left;
 }
-#video_travel{
-    height: 75%;
-    width: 80%;
-    margin-left: 10%;
+.mylink2{
+    color: black;
+    float: left;
 }
 #project_des1{
     margin: 3% 0% 2% 26%;
@@ -219,14 +159,6 @@ a{
 #project_des2{
     margin: 4% 0% 0% 33%;
     font-family: cursive;
-}
-#video_model, #con_img_model{
-    height: 83%;
-    width: 100%;
-    margin-left: 0;
-}
-#con_img_model{
-    height: 80%;
 }
 address{
     padding: 2% 0% 0% 13%;
@@ -348,18 +280,13 @@ address{
     margin-left: 30%;
 }
 .white{
-    height: 12vw;/*25%;*/
+    height: 32%;
     width: 100%;
     float: left;
-    font-family: "Arial" sans-serif;
-    font-size: 125%;/*20px;*/
-    text-align: center;
+    position: relative;
 }
-#white_int{
-    height: 157vw;/*335%;*/
-}
-#white_por{
-    height: 76vw;/*160%;*/
+#white_pro{
+    height: 235%;/*160%;*/
 }
 #white_map{
     height: 100%;
@@ -373,19 +300,10 @@ address{
     float: left;
     background-color: grey;
 }
-#footer1{  /*personal*/
-    margin-top: 9%;
-}
-#footer2{  /*interest*/
-    margin-top: 155%;
-}
-#footer3{  /*portfolio*/
-    margin-top: 73%;
-}
-#footer4{  /*map*/
-    margin-top: -4%;
-}
-#footer5{ /*contact*/
-    margin-top: 12%;
+.footer{
+    bottom: 0;
+    font-size: 1.2vw;
+    position: absolute;
+    margin-left: 38%;
 }
 

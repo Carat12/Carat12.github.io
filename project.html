@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="css/frame.css" />
+    <title>Project</title>
+    <link rel="stylesheet" href="https://js.arcgis.com/4.16/esri/themes/light/main.css">
+    <script src="https://js.arcgis.com/4.16/"></script>
+    <script src="javascript/frame.js" type="text/javascript"></script>
+</head>
+<body>
+    <div class="menu">
+        <!--div class="menu_line"></div-->
+        <div class="menu_div" id="personal" onmouseover="menuHover(this)" onmouseout="menuOut(this)" onclick="menuClick('index')">
+            <img class="menu_img" id="menu_img_personal" src="image/personal.png">
+        </div>
+        <div class="menu_div"  id="portfolio" style="background-color: rgb(136,23,152)" onclick="menuClick('project')">
+            <img class="menu_img" src="image/portfolio.png">
+        </div>
+        <div class="menu_div"  id="map" onmouseover="menuHover(this)" onmouseout="menuOut(this)" onclick="menuClick('map')">
+            <img class="menu_img" id="menu_img_map" src="image/map.png">
+        </div>
+        <div class="menu_div" id="contact" onmouseover="menuHover(this)" onmouseout="menuOut(this)" onclick="menuClick('contact')">
+            <img class="menu_img" id="menu_img_contact" src="image/contact.png">
+        </div>
+    </div>
+    <div class="content">
+        <div class="con_background"></div>
+        <div class="con_background_white"></div>
+        <div id="con_wel">
+            <p class="wel">Projects</p>
+            <h4>FIND WHAT I HAVE DONE.</h4>
+        </div>
+        <div class="con_card">
+            <div class="con_pro">
+                <h2 class="title">The Segregation of Blacks from Whites by County</h2>
+                <p class="text">use... skills</p>
+            </div>
+            <div class="con_pro">
+                <a href="p1.html" target="_blank"><img class="project_image" src="image/project1.JPG"></a>
+            </div>
+        </div>
+        <div class="con_card" id="card_pro2">
+            <div class="con_pro">
+                <h2 class="title">The Segregation of Blacks from Whites by County</h2>
+                <p class="text">use... skills</p>
+            </div>
+            <div class="con_pro">
+                <a href="p1.html" target="_blank"><img class="project_image" src="image/project1.JPG"></a>
+            </div>
+        </div>
+        <div class="con_card" id="card_pro3">
+            <div class="con_pro">
+                <h2 class="title">The Segregation of Blacks from Whites by County</h2>
+                <p class="text">use... skills</p>
+            </div>
+            <div class="con_pro">
+                <a href="p1.html" target="_blank"><img class="project_image" src="image/project1.JPG"></a>
+            </div>
+        </div>
+    </div>
+    <div class="white" id="white_pro">
+        <div id="white_menu"></div>
+        <p class="footer">Copyright &copy; 2020 Rui Zhu, All Rights Reserved</p>
+    </div>
+</body>
+</html>

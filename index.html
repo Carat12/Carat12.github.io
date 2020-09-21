@@ -14,10 +14,7 @@
         <div class="menu_div" id="personal" style="background-color: rgb(136,23,152)" onclick="menuClick('index')">
             <img class="menu_img" id="menu_img_personal" src="image/personal.png">
         </div>
-        <div class="menu_div"  id="interest" onmouseover="menuHover(this)" onmouseout="menuOut(this)" onclick="menuClick('interest')">
-            <img class="menu_img" src="image/interest.png">
-        </div>
-        <div class="menu_div"  id="portfolio" onmouseover="menuHover(this)" onmouseout="menuOut(this)" onclick="menuClick('portfolio')">
+        <div class="menu_div"  id="portfolio" onmouseover="menuHover(this)" onmouseout="menuOut(this)" onclick="menuClick('project')">
             <img class="menu_img" src="image/portfolio.png">
         </div>
         <div class="menu_div"  id="map" onmouseover="menuHover(this)" onmouseout="menuOut(this)" onclick="menuClick('map')">
@@ -30,28 +27,37 @@
     <div class="content">
         <div class="con_background"></div>
         <div id="con_wel">
-            <p class="wel">Welcome</p>
-            <h4>FIND WHO I AM IN MY HOMEPAGE.</h4>
+            <p class="wel">Hi, I'm Rui Zhu</p>
+            <h4>WELCOME TO MY HOMEPAGE.</h4>
         </div>
         <div class="con_card">
-            <img id = "con_img_per" src = "image/per.png" alt = "My Picture">
-            <div class="con_per1">
-                <h2 id="title1">Name</h2>
-                <p>R. Zhu</p>
-                <p style="font-size: 28px">(This picture is an anime character I Like)</p>
+            <div class="con_per">
+                <h2 class="title">About me</h2>
+                <p class="text">I am a new graduate with a master's degree in Geographic Information Science (GIS). 
+                   I love manipulating geospatial data and developing software-based solutions to geospatial challenges.
+                   My desired employment is GIS engineer or GIS analyst. Details and Quality is what I stand for. I am a quick learned and always open to learn new skills.
+                   Also I like working in a team where I'll learn much more.
+                </p>
             </div>
-            <div class="con_per2">
-                <h2>Description</h2>
-                <p>The first-year graduate student in Geographic Information Science (<b>GIS</b>) in geography department, University at Buffalo.</p>
+            <div class="con_per">
+                <h2 class="title">Detials</h2>
+                <pre class="text">
+                    <a class="mylink" href="resume.html" target="_blank"><b>Resume</b></a>
+Check my resume that describes me in Details
+
+                    <a class="mylink" href="project.html" target="_self"><b>Project</b></a>
+Check several projects of mine
+
+                    <a class="mylink" href="contact.html" target="_self"><b>Contact</b></a>
+Please feel free to contact me
+                </pre>
                 <br>
             </div>
         </div>
     </div>
     <div class="white">
         <div id="white_menu"></div>
-        <div id="footer1">
-            <p>Copyright &copy; 2018 Rui Zhu, All Rights Reserved</p>
-        </div>
+        <p class="footer">Copyright &copy; 2020 Rui Zhu, All Rights Reserved</p>
     </div>
 </body>
 </html>
