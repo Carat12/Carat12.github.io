@@ -85,7 +85,7 @@ h4{
     left: 15%;
     margin-top: 34%;
     width: 75%;
-    height: 73%;
+    height: 78%;
     box-shadow: grey 0px 10px 40px;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -297,19 +297,16 @@ address{
     margin-left: 30%;
 }
 .white{
-    height: 32%;
+    height: 50%;
     width: 100%;
     float: left;
     position: relative;
 }
 #white_pro{
-    height: 235%;/*160%;*/
+    height: 250%;/*160%;*/
 }
 #white_map{
     height: 100%;
-}
-#white_contact{
-	height: 15vw;
 }
 #white_menu{
     height: 100%;
